@@ -10,9 +10,8 @@
 https://app.codecov.io/gh/libranet/autoset-pwd
 # autoset-pwd
 
-Automatically add the bin-directory of your virtualenv to the ``PATH``-environment variable
-via ``sitecustomize``-entrypoint. You now no  longer need to manually *activate* your
-virtual environment for the sole purpose of adding thie bin-drectory to your ``$PATH``.
+Automatically add the $PWD-directory to the ``PWD_DIR``-environment variable
+via ``sitecustomize``-entrypoint.
 
 ## How does it work?
 
@@ -40,7 +39,7 @@ Or add to your poetry-based project:
 
 ## Validate & Usage
 After installing this package there is nothing left to do explicitly.
-We can validate that the plugin work correctly by starting a python-session and checking the ``PATH``-environment-variable:
+We can validate that the plugin work correctly by starting a python-session and checking the ``PWD_DIR``-environment-variable:
 
 ```bash
 > bin/python
@@ -48,9 +47,11 @@ We can validate that the plugin work correctly by starting a python-session and 
 
 ```python
 >>> import os
->>> print(os.getenv("PATH"))
-    "<path-to-your-virtualenv>/bin", ...
+>>> print(os.getcwd())
+    "<path-to-your-current-dir>"
 ```
+>>> print(os.getenv("PwD_DIR"))
+    "<path-to-your-current-dir>"
 
 
 ## Registered sitecustomize-entrypoint
