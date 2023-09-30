@@ -54,7 +54,6 @@ import pathlib as pl
 import sys
 
 import pytest
-
 import autoset_pwd
 
 # reload the module to fix coverage report
