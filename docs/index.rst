@@ -1,5 +1,5 @@
 autoset_pwd
-==============
+============
 
 .. toctree::
     :maxdepth: 2

@@ -15,11 +15,11 @@ via ``sitecustomize``-entrypoint.
 
 ## How does it work?
 
-We register the ``autoadd_bin.entrypoint()``-function to the ``sitecustomize``-module that is installed by the
+We register the ``autoset_pdw.entrypoint()``-function to the ``sitecustomize``-module that is installed by the
 [sitecustomize-entrypoints](http://pypi.python.org/pypi/sitecustomize-entrypoints)-package.
 
-The registered function will look up ``sys.prefix`` of your python-executable and
-add the corresponding bin-directory to the ``PATH``.
+The registered function will look up ``os.getcwd()`` in your current working directory and
+set it as ``PWD_DIR``-environment variable.
 
 
 ## Installation
