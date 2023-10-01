@@ -112,8 +112,8 @@ source_suffix = [".md", ".rst"]
 master_doc = "index"
 
 # General information about the project.
-project = f"{project_prefix} f{package_name}"
-copyright = f"{current_year}, f{owner}"  # pylint: disable=redefined-builtin
+project = f"{project_prefix} {package_name}"
+copyright = f"{current_year}, {owner}"  # pylint: disable=redefined-builtin
 
 
 # The version info for the project you're documenting, acts as replacement for
