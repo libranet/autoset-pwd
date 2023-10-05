@@ -22,7 +22,7 @@
 
 
 .PHONY: install  ## full initial installation
-install: create-dirs symlink-venv-dirs dotenv-install poetry-install
+install: create-dirs dotenv-install poetry-install symlink-venv-dirs
 
 
 # .PHONY: publish-pypi  ## full initial installation

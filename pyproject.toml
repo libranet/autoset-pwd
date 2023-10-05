@@ -100,7 +100,7 @@ envdir = "var/cache/nox"
 
 [tool.poetry]
 name = "autoset_pwd"
-version = "1.0" # version managed by poetry-version-plugin
+version = "0.1" # version managed by poetry-version-plugin
 license = "MIT"
 description = "Automatically set $PWD as an environment-variable."
 readme = "docs/readme.md"
