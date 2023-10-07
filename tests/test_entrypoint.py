@@ -20,7 +20,7 @@ def test_autoset_pwd() -> None:
     assert os.getcwd() == os.getenv("PWD_DIR")
 
 
-def test_autoset_pwd(tmpdir) -> None:
+def test_autoset_pwd_changed_dit(tmpdir) -> None:
     assert os.getcwd() == os.getenv("PWD_DIR")
 
     with change_working_directory(tmpdir):
